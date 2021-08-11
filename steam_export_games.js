@@ -1,3 +1,14 @@
+/*
+1. Open Chrome/Firefox
+2. Navigate to your profile game list. URL will look like https://steamcommunity.com/id/STEAMUSERNAME/games/?tab=all
+ - May require you to login to steam if you account profile is set to private
+4. Open the console, ctrl + shift + i 
+6. Paste the entire contents of the script into the console
+8. Type export_games() and hit enter. You will be prompted to save the file
+*/
+
+
+
 //--Convert data to CSV
 function arrayToCSV(objArray) {
      const array = typeof objArray !== 'object' ? JSON.parse(objArray) : objArray;
@@ -53,4 +64,4 @@ function export_games(download = true){
 
 
 console.log("Functions loaded...")
-console.log("Run export_games()")
+console.log("Run export_games() to get results")

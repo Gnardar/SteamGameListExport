@@ -1,7 +1,7 @@
 # SteamGameListExport
 Javascript functions to run in browser console to export game list with play time. This allows you to export to csv your game list without setting your profile as public.
 
-1.Open Chrome/Firefox
+1. Open Chrome/Firefox
 2. Navigate to your profile game list. URL will look like https://steamcommunity.com/id/STEAMUSERNAME/games/?tab=all
 4. Open the console, ctrl + shift + i 
 6. Paste the entire contents of the script into the console

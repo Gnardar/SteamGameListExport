@@ -30,7 +30,7 @@ function download(data, filename, type) {
 
 //--Function to trigger game ID and download
 
-function export_games(){
+function export_games(download = true){
 	var games = document.querySelectorAll('.gameListRow');
 	var output=[];
 	for (var i=0; i<games.length; i++){
@@ -43,10 +43,12 @@ function export_games(){
 	
 		output.push(tmp_game);
 	};
-	console.log(output);
-	csvContent = arrayToCSV(output);
+	console.table(output);
+	if (download){
+		csvContent = arrayToCSV(output);
 
-	download(csvContent, "gamelist.csv", "text/csv");
+		download(csvContent, "gamelist.csv", "text/csv");
+	}
 }
 
 
